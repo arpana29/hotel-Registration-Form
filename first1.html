@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Registration form</title>
+</head>
+<body>
+    <section>
+        <div id="main">
+            <h1> Hotel Booking Registration Form</h1>
+            <form action="">
+                <label for="name"><b> Customer Name:</b></label><br>
+                <input type="text" id="Name"  name="" placeholder="Enter the name" required><br><br>
+
+                <label for="date"><b>Check-in Date:</b></label><br>
+                <input type="date" id="Date"  name="" placeholder="Check-in date" required><br><br>
+
+                <label for="day"><b>Total No. of Days:</b></label><br>
+                <input type="number" id="Day"  placeholder="Enter the Days" required><br><br>
+
+                <label for="person"><b>Total No of Person:</b></label><br>
+                <input type="number" id="Person"  placeholder=" No. of person" required><br><br>
+
+                <label for="room"><b>Room Type:</b></label><br> 
+                <input class="room_type" type="radio" name="room"  value="2500" >Delux Room
+                <input class="room_type" type="radio" name="room" value="4000" >Suite Room
+
+                <br><br>
+
+                <label for="Amenities"><b>Amenities:</b></label><br>
+                <input class="animation" type="checkbox" name="Amenities"  value="1000">AC
+                <input class="animation" type="checkbox" name="Amenities"  value="300">Locker
+
+                <br>
+
+                <label for="payment"><b>Advance payment:</b></label><br>
+                <input type="number" name="" id="Payment" required><br><br>
+
+                <button class="button" value="Register" onclick="validation()">SUBMIT</button>
+                <div id="taooooo" style="display:none"><label for="total"><b>Total Amount :</b></label><p id="total_amount"></p></div>
+                <div id="maooooo" style="display:none"><label for="balance">Balance Amount :</label><p id="balance_amount"></p></div> 
+                <br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
